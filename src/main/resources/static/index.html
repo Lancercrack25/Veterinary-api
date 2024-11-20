@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pets table</title>
+	<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<form id="PetsForm">
+		<div class="mb-3 mt-3">
+	    <label for="Pet_Name" class="form-label">Pet Name:</label>
+	    <input type="text" class="form-control" id="pet_name" placeholder="Enter Pet_Name" name="Pet_Name">
+	  </div>
+	  <div class="mb-3 mt-3">
+	    <label for="species" class="form-label">Specie:</label>
+	    <input type="text" class="form-control" id="species" placeholder="Enter Specie" name="Specie">
+	  </div>
+	  <div class="mb-3 mt-3">
+	    <label for="pet_age" class="form-label">age:</label>
+	    <input type="number" class="form-control" id="pet_age" placeholder="Enter age" name="Age" min="1">
+	  </div>
+	  <div class="mb-3 mt-3">
+	    <label for="Breed" class="form-label">Breed:</label>
+	    <input type="text" class="form-control" id="breed" placeholder="Enter breed" name="Breed">
+	  </div>	
+	  <div class="mb-3 mt-3">
+	    <label for="OwnerName" class="form-label">Owner-Name:</label>
+	    <input type="text" class="form-control" id="ownerName" placeholder="Enter Owner-Name" name="OwnerName">
+	  </div>
+      <div class="mb-3 mt-3">
+	    <label for="OwnerContact" class="form-label">Owner-Contact:</label>
+	    <input type="number" class="form-control" id="ownerContact" placeholder="Enter Owner-Contact" name="OwnerContact" min="1">
+	  </div>
+
+  <button type="submit" class="btn btn-primary">Save</button>
+	</form>
+	<br>
+	<br>
+	<h2>All saved Pets</h2>
+	 <table class="table table-dark" id="studentPets">
+	    <thead>
+	      <tr>
+			<th>Id</th>
+	        <th>Pet-Name</th>
+	        <th>Specie</th>
+	        <th>Age</th>
+	        <th>Breed</th>
+	        <th>Owner-Name</th>
+            <th>Owner-Contact</th>
+	        <th>Delete</th>
+			<th>Edit</th>
+	      </tr>
+	    </thead>
+	    <tbody id="info-table">
+
+   		</tbody>
+  </table>
+  <style>
+	.inputable
+	{
+		background-color: rgb(36, 34, 34);
+		color: snow;
+	}
+  </style>
+  <script src="Js/appi.js"></script>
+</body>
+</html>
